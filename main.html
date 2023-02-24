@@ -1,21 +1,14 @@
-
 <!DOCTYPE html>
-
 <html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-	<script>
-            document.addEventListener("DOMContentLoaded", function(){
-                document.write( "DOM load success");
-            });
+    <head>
+        <script>
+            function update(){
+                    document.getElementById("status").innerHTML = "<h1>Entered Metaverse</h1>";
+                }
         </script>
-</head>
-
-<body>
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+    </head>
+    <body>
+        <p id="status">Enter the Metaverse</p>
+        <button id="enterBtn" onClick="update()">Enter</button>
+    </body>
 </html>
